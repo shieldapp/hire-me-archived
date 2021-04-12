@@ -12,7 +12,7 @@ How to get started:
 The application should be able to do 3 things:
 1. Enable users to sign up via a form (`firstName`, `lastName`, and `email`)
 2. Only allow users to sign up once (based on `email`)
-3. Show a list users who signed up
+3. Show a list of users who signed up
 
 There are no other requirements than that — take a look at the [Wireframes](#wireframes) for inspiration.
 
