@@ -20,7 +20,7 @@ If you have any questions feel free to reach out to jobs@shieldapp.ai ☺️
 
 ## FAQ
 - **Should I use a real database like Postgres to store the information or can I simply store it in a variable?**
-    - It perfectly fine if you use a variable 👌 Please add a `docker-compose.yml` file in case you decide to use a database like Postgres
+    - It's perfectly fine if you use a variable 👌 Please add a `docker-compose.yml` file in case you decide to use a database like Postgres
 - **How long should it take me to complete the assignment?**
     - It should take you less than 8 hours but it depends on your Typescript wizard magic skills 🪄
 - **What about tests?**
