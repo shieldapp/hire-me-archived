@@ -29,7 +29,9 @@ If you have any questions feel free to reach out to jobs@shieldapp.ai ☺️
 ## Wireframes
 
 ### Sign up
-![image](https://user-images.githubusercontent.com/4225398/114384176-ae7cae00-9b8e-11eb-9d03-da29177ded8f.png)
+
+![image](https://user-images.githubusercontent.com/16419971/114538338-928f1000-9c53-11eb-8be9-702381d7dbde.png)
+
 
 ### Users
 
