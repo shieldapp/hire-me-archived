@@ -35,4 +35,5 @@ If you have any questions feel free to reach out to jobs@shieldapp.ai ☺️
 
 ### Users
 
-![image](https://user-images.githubusercontent.com/4225398/114381913-01a13180-9b8c-11eb-9e3a-69eb31090daf.png)
+![image](https://user-images.githubusercontent.com/16419971/114539208-8ce5fa00-9c54-11eb-81bd-70387184cd2d.png)
+
