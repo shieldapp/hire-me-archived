@@ -13,9 +13,10 @@ describe('AppService', () => {
     service = app.get<AppService>(AppService);
   });
 
+  // reference; delete before submission
   describe('getData', () => {
-    it('should return "Welcome to api!"', () => {
-      expect(service.getData()).toEqual({ message: 'Welcome to api!' });
+    it('should return "Welcome to Shield Sign-Up!"', () => {
+      expect(service.getData()).toEqual({ message: 'Welcome to Shield Sign-Up!' });
     });
   });
 });

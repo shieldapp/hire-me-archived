@@ -8,6 +8,6 @@ import { Message } from '@sign-up-app/api-interfaces';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
+  hello$ = this.http.get<Message>('/api/users/hello');
   constructor(private http: HttpClient) {}
 }
