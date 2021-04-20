@@ -34,10 +34,10 @@ export class AppService {
     return this.users;
   }
 
-  addUser(user: User): User {
+  addUser(user: User): number {
     this.users.push(user);
 
-    return user;
+    return this.users.length;
   }
 
   updateUser(id: number, user: User): User {

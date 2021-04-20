@@ -1,4 +1,7 @@
-import { Controller, Get, Post, Put, Delete, Body, Param } from '@nestjs/common';
+import { 
+  Controller, Get, Post, Put, Delete, 
+  Body, Param, HttpException, HttpStatus
+} from '@nestjs/common';
 
 import { Message, User } from '@sign-up-app/api-interfaces';
 
@@ -19,28 +22,32 @@ export class AppController {
     return this.appService.getUser(id);
   }
 
-  @Post('add-user')
-  postUser(@Body() user: User): User  {
+  @Post('add')
+  postUser(@Body() user: User): number  {
+
+    this.appService.getUsers().forEach(item => {
+      if(item.email == user.email) {
+        throw new HttpException('Not acceptable input: User already exists', HttpStatus.NOT_ACCEPTABLE);
+      }
+    })
     
     return this.appService.addUser(user);
   }
 
-  @Put('update-user:id')
+  @Put(':id')
   updateUser(@Param('id') id: number, @Body() user: User): User {
 
     this.appService.updateUser(id, user);
     
     return user
-    // return this.appService.addUser(user)
   }
 
-  @Delete('delete-user:id')
+  @Delete(':id')
   deleteUser(@Param('id') id: number): User {
 
     const deletedUser: User = this.appService.getUser(id);
     this.appService.deleteUser(id);
 
     return deletedUser
-    // return this.appService.deleteUser(user)
   }
 }
